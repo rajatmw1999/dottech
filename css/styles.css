@@ -1,0 +1,24 @@
+body{
+  background-color: #fffde1;
+}
+hr{
+  border-style : none;
+  border-top-style:dashed;
+  border-color : purple;
+  width: 30%;
+  border-width:3px;
+}
+fieldset{
+  border-style:solid;
+  border-color : powderblue;
+}
+h1{
+  color:#c40b13;
+}
+h3{
+  color:#c40b13;
+}
+
+.circular{
+  border-radius: 100%;
+}
