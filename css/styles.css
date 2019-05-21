@@ -1,24 +1,12 @@
-body{
-  background-color: #fffde1;
+#title{
+  background-color: #fdd043;
 }
-hr{
-  border-style : none;
-  border-top-style:dashed;
-  border-color : purple;
-  width: 30%;
-  border-width:3px;
+.container-fluid{
+  padding:3% 15% 0% 15%;
 }
-fieldset{
-  border-style:solid;
-  border-color : powderblue;
+p{
+  font-family: Montserrat;
 }
-h1{
-  color:#c40b13;
-}
-h3{
-  color:#c40b13;
-}
-
-.circular{
-  border-radius: 100%;
+#aboutme{
+  font-family: Ubuntu;
 }
