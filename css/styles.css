@@ -10,3 +10,23 @@ p{
 #aboutme{
   font-family: Ubuntu;
 }
+.navbar-brand{
+  /* font-weight:bold; */
+color: #000;
+}
+
+#skills{
+  margin:7% 12%;
+    text-align:center;
+}
+.icons-skills{
+  color:#6fc2d0;
+  padding-bottom:1rem;
+}
+.icons-skills:hover{
+  color:#4592af;
+}
+#p-skill{
+  color:grey;
+  font-size:0.9rem;
+}
