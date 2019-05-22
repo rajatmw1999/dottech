@@ -16,8 +16,9 @@ color: #000;
 }
 
 #skills{
-  margin:7% 12%;
+  margin:15% 12%;
     text-align:center;
+
 }
 .icons-skills{
   color:#6fc2d0;
@@ -29,4 +30,42 @@ color: #000;
 #p-skill{
   color:grey;
   font-size:0.9rem;
+}
+
+#project-icon{
+  color:red;
+  padding-top: 2rem;
+}
+#project-icon-game{
+  color:yellow;
+  padding-top: 2rem;
+}
+#project-icon-tindog{
+  color: #ff4c68;
+  padding-top: 2rem;
+}
+
+#project-icon-laptop{
+  color: black;
+  padding-top: 2rem;
+}
+#projects{
+    color:#fff;
+  padding-top:4rem;
+  padding-bottom:4rem;
+
+  background-color:#6fc2d0;
+  text-align:center;
+}
+.carousel-item{
+    padding-left:15%;
+    padding-right: 15%;
+}
+
+h2{
+  font-size:3rem;
+}
+
+#github-icon{
+  padding-top:7rem;
 }
