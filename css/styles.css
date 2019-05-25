@@ -18,6 +18,7 @@ color: #000;
 #skills{
   margin:15% 12%;
     text-align:center;
+    position:relative;
 
 }
 .icons-skills{
@@ -68,4 +69,30 @@ h2{
 
 #github-icon{
   padding-top:7rem;
+}
+
+
+.footer{
+  background-color: #fff;
+  text-align: center;
+  padding: 3% 0;
+  color:grey;
+}
+.foot-icon{
+  padding:15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color:black;
+}
+
+
+
+@media (max-width:1028px){
+  .img-fluid{
+    position:relative;
+    margin-top:80%;
+  }
+  #title{
+    text-align: center;
+  }
 }
