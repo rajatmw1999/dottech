@@ -246,6 +246,18 @@ h5{font-size: 18px;color: #464646;line-height: 28px;}
 .skills-set li:nth-child(4) .fill {background: #f5e200;}
 .skills-set li:nth-child(5) .barfiller{border: 1px solid #dd59ad;}
 .skills-set li:nth-child(5) .fill {background: #dd59ad;}
+.skills-set li:nth-child(6) .barfiller{border: 1px solid #FC5632;}
+.skills-set li:nth-child(6) .fill {background: #FC5632;}
+.skills-set li:nth-child(7) .barfiller{border: 1px solid #58C86B;}
+.skills-set li:nth-child(7) .fill {background: #58C86B;}
+.skills-set li:nth-child(8) .barfiller{border: 1px solid #5058CC;}
+.skills-set li:nth-child(8) .fill {background: #5058CC;}
+.skills-set li:nth-child(9) .barfiller{border: 1px solid #D9BF1E;}
+.skills-set li:nth-child(9) .fill {background: #D9BF1E;}
+.skills-set li:nth-child(10) .barfiller{border: 1px solid #1ED9B3;}
+.skills-set li:nth-child(10) .fill {background: #1ED9B3;}
+.skills-set li:nth-child(11) .barfiller{border: 1px solid #D91E29;}
+.skills-set li:nth-child(11) .fill {background: #D91E29;}
 
 .services-sec{padding: 80px 0;}
 .services-sec h5{    width: 70%;margin-bottom: 80px;    font-family: 'Old Standard TT', serif;opacity: 0.9;}
