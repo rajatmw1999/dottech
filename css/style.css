@@ -886,17 +886,17 @@ font-family: 'Sigmar One', cursive;
   } */
   #particles-js span{
     font-size: 2rem;
-    margin-left: -4rem;
+    margin-left: -2rem;
   }
   #particles-js p{
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
   .btn-lg{
     font-size: 0.4rem !important;
     padding: 0.4rem 0.4rem;
     margin-right: 8rem;
-    margin-left: -6rem;
+    margin-left: -4rem;
   }
   html,body{
     overflow-x: hidden;
