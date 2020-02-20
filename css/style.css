@@ -876,8 +876,8 @@ font-family: 'Sigmar One', cursive;
     font-size: 1rem !important;
   } */
   #particles-js span{
-    font-size: 1rem;
-    margin-left: -5rem;
+    font-size: 2rem;
+    margin-left: -4rem;
   }
   #particles-js p{
     font-size: 1rem;
