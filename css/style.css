@@ -898,4 +898,7 @@ font-family: 'Sigmar One', cursive;
     margin-right: 8rem;
     margin-left: -6rem;
   }
+  html,body{
+    overflow-x: hidden;
+  }
 }
