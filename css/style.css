@@ -872,8 +872,14 @@ font-family: 'Sigmar One', cursive;
 }
 
 @media only screen and (max-width: 600px) {
-  #responsive {
+  /* #responsive {
     font-size: 1rem !important;
+  } */
+  #particles-js span{
+    font-size: 1rem;
+  }
+  #particles-js p{
+    font-size: 1rem;
   }
   .btn-lg{
     font-size: 0.4rem !important;
