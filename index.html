@@ -34,6 +34,12 @@
       </ul>
   </div> -->
 
+  <div id="overlay">
+  <div id="load">
+    <hr/><hr/><hr/><hr/>
+  </div>
+  </div>
+
   <div id="particles-js">
     <div class="intro-section">
       <span id="responsive">< Hi, I am Rajat. ></span>
@@ -631,6 +637,20 @@
             // "fullHeight" : false
         });
     });
+    </script>
+
+    <!-- Javascript CODE FOR PRELOADER -->
+    <script>
+var element = document.getElementById("load");
+  var element2 = document.getElementById("overlay");
+  window.addEventListener("load", function(){
+      $("#overlay").fadeOut(1000);
+    $("#load").fadeOut(1000);
+setTimeout(function(){
+  element.style.display = 'none';
+  element2.style.display = 'none';
+}, 4000);
+  });
     </script>
 </body>
 
