@@ -1,205 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <title>
-      Rajat Upadhyay</title>
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Fira+Sans|Sigmar+One&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rajat Upadhyay</title>
+      <link rel="icon" href="favicon.ico">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Old+Standard+TT" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,500,700" rel="stylesheet">
-    <!--    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
-    <link href="css/jquery.bsPhotoGallery.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+    @media only screen and (max-width: 600px) {
+    .address h2{
+        font-size: 0.5rem;
+      }
+    }
+
+      #changeonhover:hover{
+        opacity:0.6;
+      }
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px #8A2BE2;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8A2BE2;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#9400D3;
+}
+
+/* PRELOADER ADDED BY ME  */
+
+#load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+#load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+#load :first-child{background:#19A68C;animation-delay:-1.5s}
+#load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+#load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+#load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+#overlay{
+  background-color:#191919;
+  height:100%;
+  width:100%;
+  left:0;
+  top:0;
+  position:fixed;
+  z-index:9999;
+}
+</style>
 </head>
-
 <body>
-  <!-- <div class="share-sec">
-      <ul>
-          <li>
-              <a target="_blank" href="https://www.instagram.com/rajatupadhyayhere/"> <span class="fab fa-instagram"></span></a>
-          </li>
-          <li>
-              <a target="_blank" href="https://github.com/rajatmw1999"> <span class="fab fa-github"></span></a>
-          </li>
-          <li>
-              <a target="_blank" href="https://www.linkedin.com/in/rajat-upadhyay-47167271/"> <span class="fab fa-linkedin-in"></span></a>
-          </li>
-      </ul>
-  </div> -->
 
-  <div id="overlay">
-  <div id="load">
-    <hr/><hr/><hr/><hr/>
-  </div>
-  </div>
-
-  <div id="particles-js">
-    <div class="intro-section">
-      <span id="responsive">< Hi, I am Rajat. ></span>
-      <br><br><br>
-      <p id="responsive">I am a MERN stack web developer currently enrolled in a degree course in computer science and engineering at GGSIPU. I have an undying interest in competitive coding(C/C++/Python) and i am constantly indulged in development using my skills. I have developed websites for startup companies as well. </p>
-      <br><br>
-      <div id="responsive_resume_button">
-      <a href="https://docs.google.com/document/d/1CwV77kGrWgst98OKmvmhFPv2gUOc6p6ZrBh-QayYoB8/edit?usp=sharing"> <button type="button" class="btn btn-info btn-lg" name="button">Resume</button> </a>
+    <div id="overlay">
+    <div id="load">
+      <hr/><hr/><hr/><hr/>
     </div>
     </div>
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <!-- <img src="img/logo.png" alt=""> -->
+                                <h3 style="color:white; font-weight:bold;">RU</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <!-- <li><a class="active" href="index.html">home</a></li> -->
+                                    <li><a href="#about_section">About</a></li>
+                                    <li><a href="#service_section">Services</a></li>
+                                    <li><a href="#skills_section">Skills</a></li>
+                                    <li><a href="#edexp_section">Education</a></li>
+                                    <li><a href="#project_section">Projects</a></li>
+                                    <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">blog</a></li>
+                                            <li><a href="single-blog.html">single-blog</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                        <ul class="submenu">
+                                             <li><a href="portfolio.html">Portfolio</a></li>
+                                             <li><a href="elements.html">elements</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="Appointment">
+                            <div class="book_btn d-none d-lg-block">
+                                <a  href="#contact_section">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->
+
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="single_slider  d-flex align-items-center slider_bg_1">
+        <div class="shap_pattern d-none d-lg-block">
+            <img src="img/about/grid.png" alt="">
+        </div>
+        <div class="social_links">
+            <ul>
+              <li>
+                  <a target="_blank" href="https://www.linkedin.com/in/rajat-upadhyay-47167271/"> <i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                  <a target="_blank" href="https://github.com/rajatmw1999"> <i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                  <a target="_blank" href="https://www.facebook.com/rajat.upadhyay.908"> <i class="fa fa-facebook"></i></a>
+              </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12">
+                    <div class="slider_text text-center">
+                        <h3>
+                            Hello This is Rajat
+                        </h3>
+                        <span>MERN web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider_area_end -->
+
+
+<section id="service_section">
+  <div class="service_area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-12">
+                  <div class="section_title text-center mb-65">
+                      <span>Services Provided</span>
+                      <h3>How can I help you?  <br>
+                              </h3>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_service text-center">
+                      <div class="icon">
+                          <img src="img/svg_icon/1.svg" alt="">
+                      </div>
+                      <h3>Web Development</h3>
+                      <p>I expertise in MERN stack and make projects
+                         that are different from any conventional one's.
+                         Equipped with knowledge of DS and ALGO, I can make immersive and fast websites for your business.</p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_service text-center">
+                      <div class="icon">
+                          <img src="img/svg_icon/2.svg" alt="">
+                      </div>
+                      <h3>Web design</h3>
+                      <p>I can design immersive, responsive and dynamic looking web designes for your venture.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_service text-center">
+                      <div class="icon">
+                          <img src="img/svg_icon/3.svg" alt="">
+                      </div>
+                      <h3>Content creation</h3>
+                      <p>With my ability to think creative, I can create indulging content for articles for your Blogs.
+                        I have personally generated a traffic of over 195,000 views on my Quora Profile through content writing.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
-    <!-- <header>
-      <div id="particles-js">
-        <div class="container">
-          <div>
-            <div class="singnature">
-                <img src="images/signature.png" alt="sign">
-            </div>
+</section>
+<!-- service_area  -->
 
-            <div class="profile-img">
-                <img src="images/profile-photo.png" alt="img">
-            </div>
-        </div>
+<!--/ service_area  -->
+<br><br>
+<!-- about_me  -->
+<section id="about_section">
+  <div class="about_me">
+      <div class="about_large_title d-none d-lg-block">
+              About
       </div>
-    </header> -->
-    <section class="banner-sec">
-        <div class="container">
-            <div class="menu-bar">
-                <ul>
-                    <li class="active">
-                        <a href="#skills-sec">Skills </a>
-                    </li>
-                    <li>
-                        <a href="#portfolio-sec">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#education-sec">Education</a>
-                    </li>
-                    <li>
-                        <a href="#contact-sec">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#social-sec">Socials</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- <h2>Hello I am Rajat Upadhyay, 21 years old MERN stack developer from New Delhi, India.
-            </h2> -->
-            <span class="devider"></span>
-        </div>
-    </section>
-    <section class="skills-sec" id="skills-sec" style="background:url(./images/skills.jpg)no-repeat;">
-        <div class="container">
-            <h2>My Skills & Abilities</h2>
-            <h5>I have great passion and interest in the field of development. With my excessive attention to intrecat details, I always make sure thatmy projects have a tinge of difference in them. Here are my skills.</h5>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="skills-set">
-                    <li class="indvidual-skill">
-                        <div class="skill_title">
-                            <span>HTML 5</span>
-                        </div>
-                        <div class="barfiller">
-                            <span class="fill" style="width:90%"></span>
-                        </div>
-                    </li>
-                    <li class="indvidual-skill">
-                        <div class="skill_title">
-                            <span>CSS, Bootstrap</span>
-                        </div>
-                        <div class="barfiller">
-                            <span class="fill" style="width:70%"></span>
-                        </div>
-                    </li>
-                    <li class="indvidual-skill">
-                        <div class="skill_title">
-                            <span>Javascript, jquery</span>
-                        </div>
-                        <div class="barfiller">
-                            <span class="fill" style="width:90%"></span>
-                        </div>
-                    </li>
-                    <li class="indvidual-skill">
-                        <div class="skill_title">
-                            <span>Node js</span>
-                        </div>
-                        <div class="barfiller">
-                            <span class="fill" style="width:95%"></span>
-                        </div>
-                    </li>
-              </ul>
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-xl-6 col-md-6">
+                  <div class="about_e_details">
+                      <h3>About me</h3>
+                      <p>
+                        I am a MERN stack web developer currently enrolled in a degree course in computer science and engineering at GGSIPU.
+                        As a MERN stack developer, I have developed fully functional dynamic and responsive websites for a number of old as well as startup companies.
+                        <br>
+                        I am equipped with the knowledge of DS/Algo that helps me make clean and fast back end algorithms.
+                        I have an undying interest in competitive coding(C/C++/Python) and i am constantly indulged in development using my skills.
+                        </p>
+                      <div class="download_cv">
+                          <a class="boxed-btn3" target="_blank" href="https://docs.google.com/document/d/1CwV77kGrWgst98OKmvmhFPv2gUOc6p6ZrBh-QayYoB8/edit?usp=sharing">RESUME</a>
+                      </div>
+                  </div>
               </div>
-
-              <div class="col-lg-6">
-<ul class="skills-set">
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>React Js</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:85%"></span>
-      </div>
-  </li>
-
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>Content Creation</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:85%"></span>
-      </div>
-  </li>
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>MongoDB</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:90%"></span>
-      </div>
-  </li>
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>Python</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:60%"></span>
-      </div>
-  </li>
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>Singing | Self-proclaimed -_-</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:100%"></span>
-      </div>
-  </li>
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>C / C++</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:90%"></span>
-      </div>
-  </li>
-  <li class="indvidual-skill">
-      <div class="skill_title">
-          <span>DS ALGO</span>
-      </div>
-      <div class="barfiller">
-          <span class="fill" style="width:80%"></span>
-      </div>
-  </li>
-</ul>
+              <div class="col-xl-6 col-md-6">
+                  <div class="about_img">
+                      <div class="color_pattern d-none d-lg-block">
+                          <img src="img/about/color_grid.png" alt="">
+                      </div>
+                      <div class="my_Pic">
+                              <img src="img/about/about.png" alt="">
+                      </div>
+                  </div>
               </div>
+          </div>
+      </div>
+  </div>
+</section>
 
-            </div>
+<!--/ about_me  -->
 
-            <!-- <ul class="skills-set">
+<section class="skills-sec" id="skills_section" style="background:url(./images/skills.jpg)no-repeat;">
+    <div class="container">
+        <h2 style="font-size:3rem; font-weight:bold;">My Skills & Abilities</h2>
+        <br><br>
+        <!-- <h5>I have great passion and interest in the field of development. With my excessive attention to intrecat details, I always make sure thatmy projects have a tinge of difference in them. Here are my skills.</h5> -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="skills-set">
                 <li class="indvidual-skill">
                     <div class="skill_title">
                         <span>HTML 5</span>
@@ -232,426 +325,356 @@
                         <span class="fill" style="width:95%"></span>
                     </div>
                 </li>
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>React Js</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:85%"></span>
-                    </div>
-                </li>
+          </ul>
+          </div>
 
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>Content Creation</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:85%"></span>
-                    </div>
-                </li>
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:90%"></span>
-                    </div>
-                </li>
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>Python</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:60%"></span>
-                    </div>
-                </li>
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>Singing | Self-proclaimed -_-</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:100%"></span>
-                    </div>
-                </li>
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>C / C++</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:90%"></span>
-                    </div>
-                </li>
-                <li class="indvidual-skill">
-                    <div class="skill_title">
-                        <span>DS ALGO</span>
-                    </div>
-                    <div class="barfiller">
-                        <span class="fill" style="width:80%"></span>
-                    </div>
-                </li>
+          <div class="col-lg-6">
+<ul class="skills-set">
+<li class="indvidual-skill">
+  <div class="skill_title">
+      <span>React Js</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:85%"></span>
+  </div>
+</li>
 
-            </ul> -->
-        </div>
-    </section>
-
-
-    <section class="services-sec">
-        <div class="container">
-            <h2>How Can I Help You</h2>
-            <h5>You can hire for doing any of the following jobs.</h5>
-            <div class="row">
-                <div class="col-md-6 skill-item">
-                    <span><i class="fas fa-desktop"></i> </span>
-                    <h3>Web Designing</h3>
-                    <h6>I have a number of projects under my hood that proves my both my ability to build amazing website and my ability to think different and add innovative features to them.</h6>
-                </div>
-                <div class="col-md-6 skill-item">
-                    <span><i class="far fa-file-code"></i> </span>
-                    <h3>Web development</h3>
-                    <h6>I expertise in MERN stack and make projects that are different from any conventional one's. Hire me to develop your website right from scratch.</h6>
-                </div>
-                <div class="col-md-6 skill-item">
-                    <span><i class="fas fa-cogs"></i> </span>
-                    <h3>Content Creation</h3>
-                    <h6>I am constantly indulged in content creation both on online blogs, coding platforms and Quora.com.</h6>
-                </div>
-            </div>
-            <span class="devider"></span>
-            <span class="hdevider"></span>
-        </div>
-    </section>
-
-<section class="experinece" id="education-sec" style="background:url(./images/portfolio/large3.png)no-repeat;">
-
-    <div class="container">
-
-        <div class="offset-md-5 offset-sm-4 col-md-7 col-sm-8">
-
-            <h2><u>My Education</u></h2>
-            <h5>Following section lists my education till date.</h5>
-
-                 <ul class="">
-                   <li>
-                       <h3>10th Class Matric : SVMSSS</h3>
-                       <h4>Passed : 2015</h4>
-                       <span></span>
-                   </li>
-             <li>
-                 <h3>10 + 2 Intermediate : SVMSSS</h3>
-                 <h4>Passed : 2017</h4>
-                 <span></span>
-             </li>
-             <li>
-                 <h3>B.TECH CSE : MSIT, IPU</h3>
-                 <h4>2018 - 2022</h4>
-                 <span></span>
-             </li>
-
+<li class="indvidual-skill">
+  <div class="skill_title">
+      <span>Content Creation</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:85%"></span>
+  </div>
+</li>
+<li class="indvidual-skill">
+  <div class="skill_title">
+      <span>MongoDB</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:90%"></span>
+  </div>
+</li>
+<li class="indvidual-skill">
+  <div class="skill_title">
+      <span>Python</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:60%"></span>
+  </div>
+</li>
+<!-- <li class="indvidual-skill">
+  <div class="skill_title">
+      <span>Singing | Self-proclaimed -_-</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:100%"></span>
+  </div>
+</li> -->
+<li class="indvidual-skill">
+  <div class="skill_title">
+      <span>C / C++</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:90%"></span>
+  </div>
+</li>
+<li class="indvidual-skill">
+  <div class="skill_title">
+      <span>DS ALGO</span>
+  </div>
+  <div class="barfiller">
+      <span class="fill" style="width:80%"></span>
+  </div>
+</li>
+</ul>
+          </div>
 
         </div>
+
     </div>
 </section>
-    <section class="experinece" style="background:url(./images/exp.jpg)no-repeat;">
-        <div class="container">
-            <div class="offset-md-5 offset-sm-4 col-md-7 col-sm-8">
-                <h2><u>My Experience</u></h2>
-                <h5>I have some experience in web development, both in open source and corporate firm.</h5>
-                <ul>
-                    <li>
-                        <h3>Open Source Development</h3>
-                        <h4>Nov 2019 - Present</h4>
-                        <span></span>
-                    </li>
-                    <li>
-                        <h3>Web Developer @ YBT</h3>
-                        <h4>Dec 2019-Jan 2020</h4>
-                        <span></span>
-                    </li>
-                </ul>
+
+<br><br><br><br>
+
+
+<!-- EDUCATION AND EXPERIENCE SECTION -->
+<section id="edexp_section">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <div class="section_title text-center mb-65">
+                  <span></span>
+
+                  <h3>Experience and Education <br>
+                          </h3>
+              </div>
+
+          </div>
+      </div>
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<!-- The Timeline -->
+
+<ul class="timeline">
+
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<h3 class="flag">InCampus</h3>
+				<span class="time-wrapper"><span class="time">March 2020</span></span>
+			</div>
+			<div class="desc">Worked as back-end Nodejs developer in an edtech startup named InCampus. Developed API routes and managed MongoDB database.</div>
+		</div>
+	</li>
+
+
+  <li>
+    <div class="direction-l">
+      <div class="flag-wrapper">
+        <h3 class="flag">Open Source</h3>
+        <span class="time-wrapper"><span class="time">February 2020</span></span>
+      </div>
+      <div class="desc">Managed a team of more than 100 web developers as a part of an open source program GSSOC 2020. Contributed to several open source projects as well.</div>
+    </div>
+  </li>
+
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<h3 class="flag">YBT</h3>
+				<span class="time-wrapper"><span class="time">December 2019</span></span>
+			</div>
+			<div class="desc">Developed a fully functional website for an edtech startup named Your Business Tutor. Used Bootstrap, EJS, Nodejs, MongoDB.</div>
+		</div>
+	</li>
+
+
+
+  <li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<h3 class="flag">MSIT, IPU</h3>
+				<span class="time-wrapper"><span class="time">2018 - 2022</span></span>
+			</div>
+			<div class="desc">Currently enrolled in B.Tech CSE from Indraprastha University, New Delhi.</div>
+		</div>
+	</li>
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<h3 class="flag">SVMSSS</h3>
+				<span class="time-wrapper"><span class="time">April 2017</span></span>
+			</div>
+			<div class="desc">Graduated 10+2 with an aggregate percentage of 91.4%. Was awarded certificate for highest marks in Computer Science.</div>
+		</div>
+	</li>
+
+</ul>
+
+</section>
+
+<br><br><br><br><!-- PROJECTS SECTION -->
+<section id="project_section">
+  <div class="section_title text-center mb-65">
+
+      <h3>My Personal Projects
+              </h3>
+              <p>Apart from the projects of real world businesses, here are some other personal projects I have worked on.<br>(Click on their title to view)</p>
+                    <!-- <span>Services Provided</span> -->
+  </div>
+  <div class="counter_area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="http://scranton.herokuapp.com" target="_blank">A for Apple</a></span>
+                      </h3>
+                      <p>Voice controlled web app for NGOs to eradicate illiteracy from India. <br>(Awarded 2 times)
+                      </p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="http://hackmsit.iosd.tech/" target="_blank">hackMSIT</a></span>
+                      </h3>
+                      <p>Website for annual hackathon of MSIT</p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="https://yelpcamp-rajatmw1999.herokuapp.com/" target="_blank">Yelp Camp</a></span>
+                      </h3>
+                      <p>A webapp for all the camping information around the world</p>
+                  </div>
+              </div>
+
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="https://frightful-vault-72789.herokuapp.com/login" target="_blank">QuoraDev</a></span>
+                      </h3>
+                      <p> A simulation of quora.com, but for developers.</p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="https://boiling-harbor-12617.herokuapp.com/" target="_blank">News App</a></span>
+                      </h3>
+                      <p>A webapp to provide world wide news on various categories.</p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="https://radiant-sea-03258.herokuapp.com/" target="_blank">URL Shortener</a></span>
+                      </h3>
+                      <p>A webapp to shorten long URLs into a fixed length URL.</p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="http://thiscourse.me/tindog_website/" target="_blank">Tin Dog</a></span>
+                      </h3>
+                      <p> A website just like tinder, but for Dogs.</p>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4">
+                  <div class="single_counter text-center">
+                      <h3>
+                          <span class="counter" ><a href="https://github.com/rajatmw1999/Facentity" target="_blank">Facentity</a></span>
+                      </h3>
+                      <p>Payment gateway by recognizing faces.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="contact-sec" id="contact_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8  col-sm-12 content">
+                <h2 style="font-size:3.5rem; font-weight:bold;">Got a project in mind?</h2><br>
+                <h5 style="font-size:1.5rem;">I am here to serve you in development, just call me!</h5>
             </div>
+            <!-- <div class="col-md-4 col-sm-12 contact-btn">
+                <a href="mailto:rajat.upadhyay@live.com"  class="btn btn-outline-dark" style="font-size:2.5rem;" >Contact me</a>
+            </div> -->
         </div>
-    </section>
-  <!--   <section class="experinece education" style="background:url(./images/education.jpg)no-repeat;">
-        <div class="container">
-            <div class=" col-md-7 col-sm-8">
-                <h2>My Experience</h2>
-                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen book. It has survived not only five</h5>
-                <ul>
-                    <li>
-                        <h3>Developer @ Natshare</h3>
-                        <h4>Sep 2017 - Nov 2017</h4>
-                        <span></span>
-                    </li>
-                    <li>
-                        <h3>Senior Web Designer</h3>
-                        <h4>Sep 2017 - Nov 2017</h4>
-                        <span></span>
-                    </li>
-                    <li>
-                        <h3>Wordpress Developer</h3>
-                        <h4>Sep 2017 - Nov 2017</h4>
-                        <span></span>
-                    </li>
-                    <li>
-                        <h3>Graphic Designer</h3>
-                        <h4>Sep 2017 - Nov 2017</h4>
-                        <span></span>
-                    </li>
-                </ul>
+    </div>
+
+<br><br>
+<section class="getin-sec" id="contact-sec">
+    <div class="cover"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+
             </div>
-        </div>
-    </section> -->
-    <section class="portfolio-section" id="portfolio-sec">
-        <div class="main-container section-padding">
-            <h2>Here is My Portfolio</h2>
-            <h5>Here is a list of some of my innovative projects. You can have a look at more of my projects at my github profile.</h5>
-            <a target="_blank" href="https://docs.google.com/document/d/1CwV77kGrWgst98OKmvmhFPv2gUOc6p6ZrBh-QayYoB8/edit?usp=sharing">( Online resume and projects explanation )</a>
-            <div id="portfolio">
-                <div class="main_folio">
-                    <div class="folio-menu project-list">
-                        <ul class="row first gallary-img" id="myTab2">
-                          <li class="single_items mix all portarits" data-myorder="2">
-                              <a href="https://scranton.herokuapp.com/" target="_blank">
-                                  <div class="folio_small">
-                                      <img src="images/14.JPG" />
-                                      <div class="zoom-icons">
-                                          <img class="link" src="images/direction-arrow.png">
-                                      </div>
-                                  </div>
-                              </a>
+            <div class="col-md-6 col-sm-12">
+                <div class="address">
+                    <h2 style="font-size:4rem; color:white; font-weight:bold;" id="location_text">My Location</h2><br>
+                    <h5 style="font-size:2rem; color:white;" id="location_text">Janakpuri, New Delhi 110045, India</h5>
+                    <address style="font-size:2rem; color:white;">
+                        9354004651
+                        <br/> rajat.upadhyay@live.com
+                    </address>
+                    <div class="social_links">
+                        <ul>
+                          <li>
+                              <a id="changeonhover" target="_blank" style="color:white;" href="https://www.linkedin.com/in/rajat-upadhyay-47167271/"> <i class="fa fa-2x fa-linkedin"></i></a>
+                          </li><br>
+                          <li>
+                              <a id="changeonhover" target="_blank" style="color:white;" href="https://github.com/rajatmw1999"> <i class="fa fa-2x fa-github"></i></a>
                           </li>
-                          <li class="single_items mix all portarits" data-myorder="2">
-                              <a href="https://hackmsit.iosd.tech/" target="_blank">
-                                  <div class="folio_small">
-                                      <img src="images/13.JPG" />
-                                      <div class="zoom-icons">
-                                          <img class="link" src="images/direction-arrow.png">
-                                      </div>
-                                  </div>
-                              </a>
+                          <li><br>
+                              <a id="changeonhover" target="_blank" style="color:white;" href="https://www.facebook.com/rajat.upadhyay.908"> <i class="fa fa-2x fa-facebook"></i></a>
                           </li>
-                            <li class="single_items mix all portarits" data-myorder="2">
-                                <a href="https://yelpcamp-rajatmw1999.herokuapp.com/" target="_blank">
-                                    <div class="folio_small">
-                                        <img src="images/1.jpg" />
-                                        <div class="zoom-icons">
-                                            <img class="link" src="images/direction-arrow.png">
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="single_items mix portarits" data-myorder="2">
-                                <a href="https://radiant-sea-03258.herokuapp.com/" target="_blank">
-                                    <div class="folio_small">
-                                        <img src="images/2.jpg" />
-                                        <div class="zoom-icons">
-                                            <img class="link" src="images/direction-arrow.png">
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="single_items mix wedding fashion" data-myorder="2">
-                                <a href="https://frightful-vault-72789.herokuapp.com/login">
-                                    <div class="folio_small">
-                                        <img src="images/3.jpg" />
-                                        <div class="zoom-icons">
-                                            <img class="link" src="images/direction-arrow.png">
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="single_items mix portarits" data-myorder="2">
-                                <a href="https://boiling-harbor-12617.herokuapp.com/">
-                                    <div class="folio_small">
-                                        <img src="images/4.jpg" />
-                                        <div class="zoom-icons">
-                                            <img class="link" src="images/direction-arrow.png">
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="single_items mix wedding landscape" data-myorder="2">
-                                <a href="https://rajatmw1999.github.io/tindog_website/">
-                                    <div class="folio_small">
-                                        <img src="images/5.jpg" />
-                                        <div class="zoom-icons">
-                                            <img class="link" src="images/direction-arrow.png">
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="contact-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8  col-sm-12 content">
-                    <h2>Got a project in mind?</h2>
-                    <h5>I am here to serve you in development, just call me!</h5>
-                </div>
-                <div class="col-md-4 col-sm-12 contact-btn">
-                    <a href="mailto:rajat.upadhyay@live.com"  class="right">contact me</a>
-                </div>
-            </div>
-        </div>
-    </section>
-  <!--   <section class="blog-sec">
-        <div class="container">
-            <h2>Read My Blog Posts</h2>
-            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen book. It has survived not only five</h5>
-            <div class="row blog-posts">
-                <div class="col-md-6 left-sec">
-                    <div class="blog-item">
-                        <h3>Beautiful road like waterfall in the california of south most beautiful view.</h3>
-                        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen book. It not only five</h5>
-                        <a href="#">Read More</a>
-                        <span class="icon-sec"><i class="far fa-newspaper"></i></span>
-                    </div>
-                    <div class="blog-item">
-                        <h3>Beautiful road like waterfall in the california of south most beautiful view.</h3>
-                        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen book. It not only five</h5>
-                        <a href="#">Read More</a>
-                        <span class="icon-sec"><i class="far fa-newspaper"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-6 right-sec">
-                    <div class="blog-item">
-                        <h3>Beautiful road like waterfall in the california of south most beautiful view.</h3>
-                        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen book. It not only five</h5>
-                        <a href="#">Read More</a>
-                        <span class="icon-sec"><i class="far fa-newspaper"></i></span>
-                    </div>
-                    <div class="blog-item">
-                        <h3>Beautiful road like waterfall in the california of south most beautiful view.</h3>
-                        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen book. It not only five</h5>
-                        <a href="#">Read More</a>
-                        <span class="icon-sec"><i class="far fa-newspaper"></i></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="getin-sec" id="contact-sec">
-        <div class="cover"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <!-- <div class="form">
-                        <h3>Get in Touch With Me</h3>
-                        <form>
-                            <ul class="row">
-                                <li class="col-md-6">
-                                    <input type="text" placeholder="Your Name" required>
-                                </li>
-                                <li class="col-md-6">
-                                    <input type="email" placeholder="Your Email Id" required>
-                                </li>
-                                <li class="col-md-12">
-                                    <textarea placeholder="Your Message"></textarea>
-                                </li>
-                                <li class="col-md-12">
-                                  <a href="mailto:rajat.upadhyay@live.com"><button class="btn right">Submit it</button></a>
-                                </li>
-                            </ul>
-                        </form>
-                    </div> -->
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="address">
-                        <h2>My Location</h2>
-                        <h5>Janakpuri, New Delhi 110045, India</h5>
-                        <address>
-                            9354004651
-                            <br/> rajat.upadhyay@live.com
-                        </address>
-                        <div class="share-sec">
-                            <ul>
-                              <li>
-                                  <a href="https://www.instagram.com/rajatupadhyayhere/"> <span class="fab fa-instagram"></span></a>
-                              </li>
-                              <li>
-                                  <a href="https://github.com/rajatmw1999"> <span class="fab fa-github"></span></a>
-                              </li>
-                              <li>
-                                  <a href="https://www.linkedin.com/in/rajat-upadhyay-47167271/"> <span class="fab fa-linkedin-in"></span></a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 ">
-                    <h4>Website made by <em>rajatUpadhyay</em>!</h4>
-                </div>
-                <div class="col-lg-2">
+    </div>
+</section>
+</section>
+<footer>
+    <div style="background-color:black;">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3">
 
-                </div>
-                <div class=" col-lg-4 col-md-6 col-sm-6">
-                  <section id="social-sec">
-                  <div class="share-sec">
-                      <ul>
-                          <li>
-                              <a target="_blank" href="https://www.instagram.com/rajatupadhyayhere/"> <span class="fab fa-instagram"></span></a>
-                          </li>
-                          <li>
-                              <a target="_blank" href="https://github.com/rajatmw1999"> <span class="fab fa-github"></span></a>
-                          </li>
-                          <li>
-                              <a target="_blank" href="https://www.linkedin.com/in/rajat-upadhyay-47167271/"> <span class="fab fa-linkedin-in"></span></a>
-                          </li>
-                      </ul>
-                  </div>
-                </section>
-                </div>
+          </div>
+            <div class="col-md-6 col-sm-6 "><br>
+                <h4 style="color:white; font-size:1rem;">Website made by <em>rajatUpadhyay</em>!   <a id="changeonhover" target="_blank" style="color:white;" href="https://www.linkedin.com/in/rajat-upadhyay-47167271/"><br><br>LinkedIn: <i class="fa fa-linkedin"></i></a></h4>
+                <br>
+            </div>
+            <div class="col-lg-2">
+
             </div>
 
         </div>
-    </footer>
-    <script type="text/javascript" src="particles.js">
-    </script>
-    <script type="text/javascript" src="app.js">
-    </script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js">
-    </script>
-    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script src="js/jquery.bsPhotoGallery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('ul.first').bsPhotoGallery({
-            "classes": "col-md-3 col-sm-4 col-2 ",
-            "hasModal": true,
-            // "fullHeight" : false
-        });
-    });
-    </script>
 
-    <!-- Javascript CODE FOR PRELOADER -->
-    <script>
+    </div>
+</footer>
+
+
+<!-- Javascript CODE FOR PRELOADER -->
+<script>
 var element = document.getElementById("load");
-  var element2 = document.getElementById("overlay");
-  window.addEventListener("load", function(){
-      $("#overlay").fadeOut(1000);
-    $("#load").fadeOut(1000);
+var element2 = document.getElementById("overlay");
+window.addEventListener("load", function(){
+  $("#overlay").fadeOut(1000);
+$("#load").fadeOut(1000);
 setTimeout(function(){
-  element.style.display = 'none';
-  element2.style.display = 'none';
+element.style.display = 'none';
+element2.style.display = 'none';
 }, 4000);
-  });
-    </script>
+});
+</script>
+
+<!-- JS here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/ajax-form.js"></script>
+<script src="js/waypoints.min.js"></script>
+<!-- <script src="js/jquery.counterup.min.js"></script> -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/scrollIt.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/nice-select.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/gijgo.min.js"></script>
+
+<!--contact js-->
+<script src="js/contact.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+
+<script src="js/main.js"></script>
+
 </body>
 
 </html>
