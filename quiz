@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<script>
+window.onload = function() {
+    window.location.href = "http://stackoverflow.com";
+}
+</script>
+</body>
+</html>
